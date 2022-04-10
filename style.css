@@ -316,6 +316,8 @@ footer {
 .footer__below-contact__email {
     display: flex;
     gap: 0.7rem;
+    text-decoration: none;
+    color: white;
 }
 
 .footer__below-links {
