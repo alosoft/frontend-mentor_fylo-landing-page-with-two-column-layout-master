@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-flyo-landing-page-using-css-flexbox-rkSzQ2WH9)
 - Live Site URL: [Flyo Landing Page](https://alosoft.github.io/frontend-mentor_fylo-landing-page-with-two-column-layout-master/)
 
 ## My process
