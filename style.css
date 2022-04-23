@@ -69,6 +69,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
+    margin-bottom: 2rem;
 }
 
 .landing__welcome-msg {
@@ -80,6 +81,7 @@ section {
 .landing__welcome-desc {
     font-family: var(--font-family-raleway);
     font-weight: 600;
+    width: 85%;
 }
 
 .landing__welcome-start {
@@ -335,6 +337,11 @@ footer {
     color: white;
 }
 
+.footer__below-contact__phone:hover,
+.footer__below-contact__email:hover {
+    cursor: pointer;
+}
+
 .footer__below-links {
     list-style: none;
     display: flex;
@@ -375,6 +382,11 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+i:hover {
+    color: var(--bright-blue);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 54rem) {
