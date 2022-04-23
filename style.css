@@ -59,10 +59,9 @@ section {
 
 .landing {
     width: 100%;
-    height: calc(90vh - 6.315625rem);
+    height: calc(100vh - 6.315625rem);
     display: flex;
     align-items: center;
-    /* gap: 10rem; */
 }
 
 .landing__welcome {
@@ -74,28 +73,24 @@ section {
 
 .landing__welcome-msg {
     font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 .landing__welcome-desc {
     font-family: var(--font-family-raleway);
-    color: var(--desaturated-blue);
     font-weight: 600;
-    width: 80%;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
 }
 
 .landing__welcome-start {
     display: flex;
     gap: 1rem;
-    width: 75%;
+    width: 80%;
+    align-items: flex-start;
 }
 
 .landing__welcome-start__input {
-    padding: 1rem 1.5rem;
-    flex: auto;
+    padding: .5rem 1.5rem;
 }
 
 .landing__welcome-start__input::placeholder {
@@ -103,16 +98,35 @@ section {
     color: var(--desaturated-blue)
 }
 
+.landing__welcome-start__group {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: .2rem
+}
+
+.landing__welcome-start__group-msg,
+.early__input-msg {
+    color: transparent;
+    font-size: .7rem;
+    margin-top: .2rem;
+}
+
 
 .landing__welcome-start__button {
     border: none;
     background: var(--bright-blue);
     color: white;
-    padding: 0.6rem 3rem;
+    padding: .6rem 1.5rem;
     text-transform: capitalize;
     border-radius: 0.2rem;
     font-weight: 700;
     box-shadow: 0rem 0.4rem 1rem 0rem #00000036;
+}
+
+.landing__welcome-start__button:hover {
+    cursor: pointer;
+    background: rgb(53, 120, 255);
 }
 
 .landing__illustration {
@@ -125,7 +139,6 @@ section {
 
 .work {
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     padding-inline: 0;
@@ -138,10 +151,11 @@ section {
     gap: 2rem;
     justify-content: space-between;
     flex: auto;
+    padding-bottom: 2rem;
 }
 
 .work__productive {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -152,12 +166,11 @@ section {
 .work__productive-title {
     font-weight: 700;
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .work__productive-desc {
-    width: 70%;
-    color: var(--desaturated-blue);
+    width: 90%;
 }
 
 .work__productive-cta {
@@ -228,8 +241,6 @@ section {
     font-weight: 400;
 }
 
-
-
 .work__illustration {
     flex: 1;
 }
@@ -240,28 +251,28 @@ section {
 
 .early {
     display: flex;
-    height: 25vh;
     width: 100%;
     background: var(--desaturated-blue);
     gap: 2rem;
     justify-content: space-between;
     align-items: center;
+    padding-block: 3.5rem;
 }
 
 .early__access {
-    width: 40%;
     display: flex;
     flex-direction: column;
     gap: .7rem;
-    /* color: #fff; */
+    flex: 1;
 }
 
 .early__access-title {
     color: #fff;
+    font-size: 2rem;
 }
 
 .early__access-desc {
-    width: 80%;
+    width: 85%;
     color: #fff;
     line-height: 1.5rem;
 
@@ -273,6 +284,10 @@ section {
     flex-direction: column;
     gap: .7rem;
     align-items: flex-start;
+}
+
+.early__input-group {
+    width: 100%;
 }
 
 .early__input-email {
@@ -291,18 +306,18 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 40vh;
     justify-content: center;
     background: var(--very-dark-blue);
     color: white;
     gap: 2rem;
+    padding-block: 4rem;
 }
 
 .footer__below {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 60%;
+    height: 12rem;
 }
 
 .footer__below-contact {
@@ -327,7 +342,6 @@ footer {
     gap: 2rem;
     flex-wrap: wrap;
     flex: 1.5;
-    height: 80%;
 }
 
 .footer__below-links__items {
@@ -337,6 +351,11 @@ footer {
 .footer__below-links__items-link {
     text-decoration: none;
     color: white;
+}
+
+.footer__below-links__items-link:hover {
+    text-decoration: none;
+    color: var(--bright-blue);
 }
 
 .footer__below-social {
@@ -407,6 +426,10 @@ footer {
 
     .landing__welcome-start {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .landing__welcome-start__group {
         width: 100%;
     }
 
@@ -481,6 +504,7 @@ footer {
     .footer__below {
         flex-direction: column;
         gap: 3rem;
+        height: unset;
     }
 
     p {

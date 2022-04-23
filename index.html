@@ -35,10 +35,13 @@
             Access them wherever you need, share and collaborate with friends,
             family, and co-workers.
           </p>
-          <div class="landing__welcome-start">
-            <input placeholder="Enter your email" type="email" class="landing__welcome-start__input">
-            <button class="landing__welcome-start__button">get Started</button>
-          </div>
+          <form method="post" class="landing__welcome-start form">
+            <div class="landing__welcome-start__group">
+              <input placeholder="Enter your email" type="text" class="landing__welcome-start__input">
+              <p class="landing__welcome-start__group-msg">Please check your email</p>
+            </div>
+            <button type="submit" class="landing__welcome-start__button">get Started</button>
+          </form>
         </div>
         <div class="landing__illustration">
           <img src="./images/illustration-1.svg" alt="files-illustration">
@@ -96,14 +99,18 @@
             questions, our support team would be happy to help.
           </p>
         </div>
-        <div class="early__input">
-          <input class="early__input-email" type="email" placeholder="email@example.com">
-          <button class="landing__welcome-start__button">Get started for free</button>
-        </div>
+        <form class="early__input">
+          <div class="early__input-group">
+            <input class="early__input-email" type="text" placeholder="email@example.com">
+            <p class="early__input-msg">Please check your email</p>
+          </div>
+          <button type="submit" class="landing__welcome-start__button">Get started for free</button>
+        </form>
       </section>
     </main>
     <footer class="footer">
-      <svg class="footer__logo" width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg class="footer__logo" width="166" height="49" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
           <path id="a" d="M.014.03h93.96v48.29H.015z" />
         </defs>
@@ -138,7 +145,8 @@
           </a>
         </div>
         <ul class="footer__below-links">
-          <li class="footer__below-links__items"><a href="#about_us" class="footer__below-links__items-link">About Us</a></li>
+          <li class="footer__below-links__items"><a href="#about_us" class="footer__below-links__items-link">About
+              Us</a></li>
           <li class="footer__below-links__items"><a href="#jobs" class="footer__below-links__items-link">Jobs</a></li>
           <li class="footer__below-links__items"><a href="#press" class="footer__below-links__items-link">Press</a></li>
           <li class="footer__below-links__items"><a href="#blog" class="footer__below-links__items-link">Blow</a></li>
@@ -161,7 +169,7 @@
         </div>
       </div>
     </footer>
-   
+    <script src="script.js"></script>
   </body>
 
 </html>
